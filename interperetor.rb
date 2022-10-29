@@ -1,1 +1,0 @@
-load 'lib/lexor.rb'
