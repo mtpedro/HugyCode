@@ -27,3 +27,23 @@ RSpec.describe Methods, '#variable' do
 		end
 	end
 end
+
+RSpec.describe Methods, '#print' do
+	context 'printing a string litteral' do
+		it 'should return a text to print' do
+			memory = {:name => "Hugy"}
+			res = Methods.print '>Hugy', memory
+			expected = "Hugy"
+			expect(res).to eq expected
+		end
+	end
+
+	context 'printing a variable' do
+		it 'should return the string value of the variable' do
+			memory = {:name => "Hugy"}
+			res = Methods.print '>$name', memory
+			expected = "Hugy"
+			expect(res).to eq expected
+		end
+	end
+end
