@@ -10,9 +10,6 @@
 
 *$res[10/(2+3)];
 
-:$res;
+# you may use exponents in mathematical equations.
 
 *$res[97^12];
-
-:$res
-

@@ -1,0 +1,3 @@
+# in HugyCode, you dont need double quotes for strings:
+$a=Hello World;
+:Hello World;

@@ -1,3 +1,8 @@
-# in HugyCode, you dont need double quotes for strings:
-$a=Hello World;
-:Hello World;
+# in HugyCode, you don't need strings to print text:
+
+:the filth is real;
+
+# you may also print variables
+
+$a=10;
+:$a;
