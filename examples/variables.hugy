@@ -1,0 +1,2 @@
+$a=2; # create variable a and assign it a value of 2
+$b=4;

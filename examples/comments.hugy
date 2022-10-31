@@ -1,4 +1,4 @@
 $a=50; # comment inline with method
 # creates variable, 'a' with value of 50
 
-# can have comments anywhere without affecting code
+# can have comments anywhere without affecting code`

@@ -1,0 +1,18 @@
+# to do basic maths, declare that you are entering into maths mode 
+# with the star operator: *
+# next declare the variable that will be the result of the maths equation
+# to do maths, use the square brackets
+
+*$res[5+2];
+
+# this will assign the result of 5 + 2 to the variable $res
+# you may use brackets as well
+
+*$res[10/(2+3)];
+
+:$res;
+
+*$res[97^12];
+
+:$res
+

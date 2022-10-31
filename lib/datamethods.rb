@@ -1,3 +1,5 @@
+require 'dentaku'
+
 class String
   def is_integer?
     self.to_i.to_s == self
@@ -5,7 +7,7 @@ class String
 end
 
 module Methods
-	def variable line
+	def newvariable line
 		name = String.new
 		value = String.new 
 
@@ -23,13 +25,13 @@ module Methods
 		end
 
 		if value.is_integer? == true
-			return {name.to_sym => value.to_i} 
+			return name.to_sym, value.to_i
 		end
 
-		return {name.to_sym => value}
+		return name.to_sym, value
 	end
 
-	def print(line, memory)
+	def hugyprint(memory, line)
 		value = String.new
 
 		chars = line.split('')
@@ -48,6 +50,29 @@ module Methods
 		return value
 	end
 
+	def maths(line)
+		chars = line.split('')
+		place = 2
+		var = String.new
+
+		until chars[place] == '['
+			var << chars[place]
+			place += 1
+		end
+
+		place += 1
+
+		eq = String.new
+
+		until chars[place] == ']'
+			eq << chars[place]
+			place +=1
+		end
+
+		calculator = Dentaku::Calculator.new
+
+		return var.to_sym, calculator.evaluate(eq).to_i
+	end
 
 	private
 
@@ -56,6 +81,6 @@ module Methods
 			return nil
 		end
 
-		return memory[key]
+		return memory[key].to_s
 	end
 end

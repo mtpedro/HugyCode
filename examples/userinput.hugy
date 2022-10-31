@@ -1,0 +1,3 @@
+# to declare user input, use the % operator:
+%$a;
+:$a
