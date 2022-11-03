@@ -12,6 +12,7 @@ def interperate code
         :mayomonkey => "scum",
         :walter => "jesse, we need to cook",
         :doxx => ip.ip_address.to_s,
+        :hehehehaw => "I am smarter than you",
     }
 
     code.each do |line|
